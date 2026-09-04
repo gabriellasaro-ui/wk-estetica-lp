@@ -396,7 +396,7 @@ img {
   display: flex;
   align-items: center;
   background-color: var(--ff-cream-2);
-  background-image: url('img/banner%20isabella%20pc.png');
+  background-image: url('img/banner%20novo%20wk.jpeg');
   background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;
@@ -421,7 +421,7 @@ img {
   width: 100%;
   max-width: 1500px;
   margin: 0 auto;
-  padding: 8rem clamp(24px, 4vw, 48px) 5rem clamp(24px, 8vw, 152px);
+  padding: 8rem clamp(24px, 4vw, 48px) 5rem clamp(24px, 4.5vw, 88px);
 }
 
 .ff-hero-copy {
@@ -1332,25 +1332,31 @@ img {
     line-height: 1.65;
   }
 
-  /* O banner mobile tem a Dra. Isabella Domingues no topo e a bancada livre embaixo:
-     o texto comeca logo apos a bancada (~88vw) e o degrade fecha em creme. */
+  /* No mobile a navegacao sai de cena: o botao flutuante de WhatsApp
+     assume o papel de CTA fixo. */
+  .ff-nav {
+    display: none;
+  }
+
+  /* Banner vertical proprio do mobile: a Dra. Isabella Domingues ocupa o topo
+     em largura cheia e o texto comeca depois do degrade (~100vw). */
   .ff-hero {
     min-height: auto;
     align-items: flex-end;
-    background-image: url('img/banner%20isabella%20mobile.png');
+    background-image: url('img/MOBILE%20WK.jpg.jpeg');
     background-position: top center;
     background-size: 100% auto;
     background-color: var(--ff-cream);
-    padding-top: 88vw;
+    padding-top: 100vw;
   }
 
   .ff-hero::before {
     background: linear-gradient(180deg,
         rgba(255, 240, 238, 0) 0,
-        rgba(255, 240, 238, 0) 58vw,
-        rgba(255, 240, 238, 0.55) 74vw,
-        rgba(255, 240, 238, 0.92) 84vw,
-        var(--ff-cream) 92vw);
+        rgba(255, 240, 238, 0) 68vw,
+        rgba(255, 240, 238, 0.55) 85vw,
+        rgba(255, 240, 238, 0.92) 96vw,
+        var(--ff-cream) 106vw);
   }
 
   .ff-hero-inner {
@@ -1395,13 +1401,3 @@ img {
   }
 }
 
-@media (max-width: 400px) {
-  .ff-nav-brand img {
-    height: 22px;
-  }
-
-  .ff-nav-cta {
-    padding: 0.7rem 1.1rem;
-    font-size: 0.58rem;
-  }
-}
