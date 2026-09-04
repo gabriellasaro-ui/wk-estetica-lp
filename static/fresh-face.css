@@ -349,16 +349,16 @@ img {
 }
 
 .ff-nav-brand {
-  font-family: var(--ff-font-serif);
-  font-size: 1.05rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  color: var(--ff-brown-dark);
-  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  line-height: 0;
 }
 
-.ff-nav-brand span {
-  color: var(--ff-gold-dark);
+.ff-nav-brand img {
+  height: 30px;
+  width: auto;
+  display: block;
 }
 
 .ff-nav-links {
@@ -1396,8 +1396,8 @@ img {
 }
 
 @media (max-width: 400px) {
-  .ff-nav-brand {
-    font-size: 0.92rem;
+  .ff-nav-brand img {
+    height: 22px;
   }
 
   .ff-nav-cta {
